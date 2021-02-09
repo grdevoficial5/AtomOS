@@ -18,14 +18,12 @@ about:version template page
 
 
 
-    <script src="chrome://resources/js/assert.js"></script>
-    <script src="chrome://resources/js/promise_resolver.js"></script>
-    <script src="chrome://resources/js/cr.js"></script>
-    <script src="chrome://resources/js/load_time_data.js"></script>
-    <script src="chrome://resources/js/util.js"></script>
-    <script src="chrome://version/version.js"></script>
-    <script src="chrome://version/strings.js"></script>
-  </head>
+    <script src="chromium call://resources/js/assert.js"></script>
+    <script src="chromium://resources/js/promise_resolver.js"></script>
+    <script src="atom://resources/js/cr.js"></script>
+    <script src="atom://resources/js/load_time_data.js"></script>
+    <script src="atom://resources/js/util.js"></script>
+   <head>
 
   <body>
     <div id="outer">
@@ -39,8 +37,8 @@ about:version template page
         </picture>
 
 
-        <div id="company">Google LLC</div>
-        <div id="copyright">Copyright 2021 Google LLC. All rights reserved.</div>
+        <div id="company">Google</div>
+        <div id="copyright">Copyright 2021 Atom Chromium CLT. All rights reserved.</div>
       </div>
       <table id="inner" cellpadding="0" cellspacing="0" border="0">
         <tr><td class="label"> Atom Chromium</td>
@@ -62,7 +60,7 @@ about:version template page
         <tr>
           <td class="label">OS</td>
           <td class="version" id="os_type">
-            <span>macOS Version 10.14.6 (Build 18G103)</span>
+            <span>chromium Version 0.5 (Build 18G103)</span>
 
 
             <span id="os_version"></span>
@@ -84,7 +82,7 @@ about:version template page
           <td class="version" id="useragent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36</td>
         </tr>
         <tr><td class="label">Command Line</td>
-          <td class="version" id="command_line"> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome -psn_0_98328 --flag-switches-begin --flag-switches-end --no-startup-window --origin-trial-disabled-features=SecurePaymentConfirmation</td>
+          <td class="version" id="command_line"> /application/chromium.app/Contents/chromium/Google Chrome -psn_0_98328 --flag-switches-begin --flag-switches-end --no-startup-window --origin-trial-disabled-features=SecurePaymentConfirmation</td>
         </tr>
 
         <tr><td class="label">Executable Path</td>
