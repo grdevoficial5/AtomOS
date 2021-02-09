@@ -1,0 +1,113 @@
+<!--
+about:version template page
+-->
+
+<html id="t" dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="color-scheme" content="light dark">
+    <title>About Version</title>
+
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="chromium://theme/current-channel-logo">
+
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults.css">
+
+    <link rel="stylesheet" href="chrome://version/about_version.css">
+
+
+
+
+    <script src="chrome://resources/js/assert.js"></script>
+    <script src="chrome://resources/js/promise_resolver.js"></script>
+    <script src="chrome://resources/js/cr.js"></script>
+    <script src="chrome://resources/js/load_time_data.js"></script>
+    <script src="chrome://resources/js/util.js"></script>
+    <script src="chrome://version/version.js"></script>
+    <script src="chrome://version/strings.js"></script>
+  </head>
+
+  <body>
+    <div id="outer">
+      <div id="logo">
+
+        <!-- Version for themes. -->
+        <picture>
+          <source srcset="chromium://theme/IDR_PRODUCT_LOGO_WHITE" media="(prefers-color-scheme: dark)">
+          <source srcset="chromium://theme/IDR_PRODUCT_LOGO" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+          <img alt="Chromium logo" src="chrome://theme/IDR_PRODUCT_LOGO">
+        </picture>
+
+
+        <div id="company">Google LLC</div>
+        <div id="copyright">Copyright 2021 Google LLC. All rights reserved.</div>
+      </div>
+      <table id="inner" cellpadding="0" cellspacing="0" border="0">
+        <tr><td class="label"> Atom Chromium</td>
+          <td class="version" id="version">
+            <span>88.0.4324.146</span>
+            (<span>Official Build</span>)
+            <span></span>
+            <span>(x86_64)</span>
+
+          </td>
+        </tr>
+        <tr>
+          <td class="label">Revision</td>
+          <td class="version">
+            <span>406dc88511162d6598242f2c709be1414a042fb0-refs/branch-heads/4324@{#2088}</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="label">OS</td>
+          <td class="version" id="os_type">
+            <span>macOS Version 10.14.6 (Build 18G103)</span>
+
+
+            <span id="os_version"></span>
+
+          </td>
+        </tr>
+
+
+
+
+        <tr><td class="label">JavaScript</td>
+          <td class="version" id="js_engine">
+            <span>V8</span>
+            <span>8.8.278.14</span>
+          </td>
+        </tr>
+
+        <tr><td class="label">User Agent</td>
+          <td class="version" id="useragent">Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36</td>
+        </tr>
+        <tr><td class="label">Command Line</td>
+          <td class="version" id="command_line"> /Applications/Google Chrome.app/Contents/MacOS/Google Chrome -psn_0_98328 --flag-switches-begin --flag-switches-end --no-startup-window --origin-trial-disabled-features=SecurePaymentConfirmation</td>
+        </tr>
+
+        <tr><td class="label">Executable Path</td>
+          <td class="version" id="executable_path"></td>
+        </tr>
+        <tr><td class="label">Profile Path</td>
+          <td class="version" id="profile_path"></td>
+        </tr>
+
+        <tr id="variations-section">
+          <td class="label">Variations</td>
+          <td class="version" id="variations-list"></td>
+        </tr>
+        <tr id="variations-cmd-section" hidden>
+          <td class="label">Command-line variations</td>
+          <td class="version-wide" id="variations-cmd"></td>
+        </tr>
+        <tr id="sanitizer-section" hidden>
+          <td class="label">Sanitizer</td>
+          <td class="version" id="sanitizer"></td>
+        </tr>
+
+      </table>
+    </div>
+  </body>
+</html>
