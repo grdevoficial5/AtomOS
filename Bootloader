@@ -1,0 +1,18 @@
+{boot}
+<div class="card">
+  <img src="card.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h4><b>Image a</b></h4> 
+    <p>boot</p> 
+  </div>
+</div>
+{
+  <div class="card">
+  <
+  <div class="container">
+    <h4><b>image b</b></h4> 
+    <p>public</p> 
+  </div>
+</div>
+
+
